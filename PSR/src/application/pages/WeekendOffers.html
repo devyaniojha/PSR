@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .well {
+         
+            background: rgb(217, 204, 204);
+        }
+
+    </style>
+    <script>
+        function open() {
+
+            window.open('HomeDelivery.html','_blank');
+
+        }
+
+    </script>
+</head>
+<body style="background-image: url('../img/pages/bgrepeat.jpg');background-repeat:repeat; overflow:scroll">
+    <div class="container-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">PS Restaurant</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="HomeDelivery.html">Home Delivery</a></li>
+                        <li><a href="TakeAway.html">Take Away</a></li>
+                        <li class="active"><a href="WeekendOffers.html">Weekend Offers</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="ContactUs.html" target="_blank">Contact Us</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <br /><br /><br />
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center text-primary">
+                    Another weekend? Best offers for you. Use below coupon codeto get best deals!
+                </h1><br />
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="well">
+
+                            <h2 class="text-center text-primary">
+                                VEG50
+                            </h2>
+                            <blockquote>
+                                <p>
+                                    Get Flat 50% offer in all vegetarian orders
+                                </p> <small>Only on your first order</small><br />
+                            </blockquote> <a href="#" onclick="open()"  >Order Now</a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2 class="text-center text-primary">
+                                NONVEG50
+                            </h2>
+                            <blockquote>
+                                <p>
+                                    Get 50% offer in all non-vegetarian orders
+                                </p> <small>Only on your first order</small>
+                            </blockquote> <a href="#" class="btn btn-lg btn-link" type="button">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2 class="text-center text-primary">
+                                CURRY10
+                            </h2>
+                            <blockquote>
+                                <p>
+                                    Get Rs.10 discount on all curry items
+                                </p> <small>Only for your first and second order</small>
+                            </blockquote> <a href="#" class="btn btn-link btn-lg" type="button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2 class="text-center text-primary">
+                                DHAMAKA150
+                            </h2>
+                            <blockquote>
+                                <p>
+                                    Get Rs.150 discount on all orders above Rs.600
+                                </p> <small>Only available on Sundays</small>
+                            </blockquote> <a href="#" class="btn btn-link btn-lg" type="button">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2 class="text-center text-primary">
+                                FESTIVE250
+                            </h2>
+                            <blockquote>
+                                <p>
+                                    Get Rs.250 discount on all orders above Rs.1000
+                                </p> <small>Only available on government holidays</small>
+                            </blockquote> <a href="#" class="btn btn-lg btn-link" type="button">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="well">
+                            <h2 class="text-center text-primary">
+                                FOODIE10
+                            </h2>
+                            <blockquote>
+                                <p>
+                                    Get Rs.10 discount on all orders
+                                </p> <small>Only available on all Fridays of first week of every month</small>
+                            </blockquote> <a href="#" class="btn btn-link btn-lg" type="button">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-5">
+                <div class="text-center text-info"><h3>Previous Offers</h3></div>
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered text-center" style="background-color: rgb(228, 231, 247);" id="previousOffers">
+                        <thead>
+                            <tr class="primary">
+                                <th class="text-center">Date</th>
+                                <th class="text-center">Coupon Code</th>
+                                <th class="text-center">Offer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20-Apr-2016</td>
+                                <td>DHAMAKA10</td>
+                                <td>10% discount on all orders</td>
+                            </tr>
+                            <tr>
+                                <td>10-Jan-2017</td>
+                                <td>SUN5</td>
+                                <td>5% discount on all Sundays of Jan</td>
+                            </tr>
+                            <tr>
+                                <td>06-May-2016</td>
+                                <td>SAT5</td>
+                                <td>Rs.5 dicount on all Saturdays of May</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-md-5">
+                <div class="text-center text-info"><h3>Upcoming Offers</h3></div>
+                <div class="table-responsive">
+                    <table id="upcomingOffers" class="table table-hover table-bordered text-center" style="background-color: rgb(228, 231, 247); ">
+                        <thead>
+                            <tr class="primary">
+                                <th class="text-center">Date</th>
+                                <th class="text-center">Coupon Code</th>
+                                <th class="text-center">Offer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>02-Mar-2017</td>
+                                <td>DHAMAKA150</td>
+                                <td>Rs.150 discount on all orders</td>
+                            </tr>
+                            <tr>
+                                <td>25-Mar-2017</td>
+                                <td>VEG10</td>
+                                <td>Rs.10 discount on all Veg orders</td>
+                            </tr>
+                            <tr>
+                                <td>20-Apr-2017</td>
+                                <td>NONVEG5</td>
+                                <td>5% dicount on all Non Veg orders</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+           </div>
+        
+
+</body>
+</html>

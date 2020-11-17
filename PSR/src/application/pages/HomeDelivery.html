@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url('../img/pages/bgrepeat.jpg');background-repeat:repeat; overflow:scroll">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">PS Restaurant</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="HomeDelivery.html">Home Delivery</a></li>
+                    <li><a href="TakeAway.html">Take Away</a></li>
+                    <li><a href="WeekendOffers.html">Weekend Offers</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="ContactUs.html" target="_blank">Contact Us</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <div class="text-center text-primary">
+        <br /><br /><br />
+        <h1>Hungry? Order Now!</h1>
+    </div>
+    <!--container starts here -->
+    <div class="container">
+        <div class="container-fluid">
+<br />
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+
+                    <div class="panel panel-primary" id="image">
+                        <div class="panel-heading text-center">New Order - Home Delivery</div>
+
+                        <div class="panel-body">
+                            <form method="post" role="form" onsubmit="alert('Order Success! You\'ll receive your food within 30 minutes.')">
+                                <div class="form-group">
+
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Select Type
+                                        </div>
+                                        <div class="col-md-8">
+
+                                            <div class="input-group">
+                                                <label class="radio-inline">
+                                                    <input type="radio" required name="foodType" onclick="changeDishes(this.value)" value="veg">Vegetarian
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" required name="foodType" onclick="changeDishes(this.value)" value="nonveg">Non-Vegetarian
+                                                </label>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Select Main Dish
+                                        </div>
+                                        <div class="col-md-8">
+                                            <select class="form-control" id="mainDish" name="mainDish" required>
+                                                <option value=""  selected>--Select--</option>
+
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Select Curry
+                                        </div>
+                                        <div class="col-md-8">
+                                            <select class="form-control" id="curry" name="curry" required>
+                                                <option value="">--Select--</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Name
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+                                                <input id="name" type="text" class="form-control" name="username" placeholder="enter username" required>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Address
+                                        </div>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" rows="3" id="address" name="customerAddress" placeholder="enter address" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Mobile
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">+91</span>
+                                                <input id="mobile" type="number" class="form-control" name="mobileno" required placeholder="enter mobile number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            Email
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                <input required id="email" type="email" class="form-control" name="email" placeholder="enter email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+
+                                    <div class="well">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                Coupon code
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control input-sm" placeholder="enter coupon code">
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <br>
+                                        <div class="checkbox text-center">
+                                            <label>
+                                                <input type="checkbox" checked="checked">Send me receipt to Email &amp; Mobile
+                                            </label>
+                                        </div>
+                                        <br>
+                                   
+                                    </div>
+
+
+                                </div>
+
+
+                                
+                                <button type="submit" class="btn btn-default btn-block btn-embossed btn-success">Submit</button>
+</form>
+
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+<script>
+var mainDishes = {
+    veg: ["Ven Pongal","Mushroom Pulao", "Dal Khichdi", "Bisi Bele Bath", "Vegetable Tahiri"],
+    nonveg: ["Chicken Biryani","Fish Rice","Pepper Chicken Rice","Masala Rice","Chicken Fried Rice"]
+}
+var curries = {
+    veg: ["Dal Fry", "Butter Paneer", "Spicy Moong Dal Curry", "Sweet Potato Curry","Brussels Sprouts Curry"],
+    nonveg: ["Chicken Chettinad", "Fish Curry", "Punjabi Egg Curry", "Crab Curry","Cranberry Fish Curry"]
+   
+}
+
+function changeDishes(value) {
+        var allMainDishes = "";
+        var allCurries = "";
+        for (type in mainDishes[value]) {
+            allMainDishes += "<option>" + mainDishes[value][type] + "</option>";
+        }
+        document.getElementById("mainDish").innerHTML = allMainDishes;
+        for (type in curries[value]) {
+            allCurries += "<option>" + curries[value][type] + "</option>";
+        }document.getElementById("curry").innerHTML = allCurries;
+        
+
+}
+</script>
+</html>
