@@ -56,8 +56,8 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
      <configuration>
-         <warSourceDirectory>C:\Users\abhilash_js\git\psrestaurant\PSR\src\application</warSourceDirectory>
-       <outputDirectory>D:\PSRestaurantDevops\Jenkins\workspace\PSRestaurant\PSWar\PSR</outputDirectory>
+         <warSourceDirectory>C:\DevOps_WorkSpace\PSR_Project\PSR\src\application</warSourceDirectory>
+       <outputDirectory>C:\Program Files (x86)\Jenkins\workspace\PSRestaurant\War\PSR</outputDirectory>
         </configuration>
         
       </plugin>
@@ -72,7 +72,7 @@
   			<artifactId>maven-surefire-plugin</artifactId>
   			<version>2.18.1</version>
   			 			<configuration>
-  			<reportsDirectory>D:\PSRestaurantDevops\Jenkins\workspace\PSRestaurant\PSUnitTest\PSR</reportsDirectory>
+  			<reportsDirectory>C:\Program Files (x86)\Jenkins\workspace\PSRestaurant\UnitTest\PSR</reportsDirectory>
   </configuration>
   		</plugin>
   		
